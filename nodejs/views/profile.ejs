@@ -1,0 +1,83 @@
+<% include header %>
+
+    <header class="masthead" style="background-image: url('/images/<%= data[0].avatar %>')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>Thông tin cá nhân</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-4">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="/images/<%= data[0].avatar%>" class="w-100 h-100">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <i>Tên</i>: <%= data[0].name%>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a class="btn btn-secondary" href="/suanv/<%= data[0]._id%>">Sửa thông tin</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <h1 class="text-center">Bài viết của tôi</h1>
+            <% myblog.forEach(view=> { %>
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h4>
+                                <%= view.name%>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center" style="text-overflow:ellipsis;">
+                                <%= view.des%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <i>Thể loại :<%= view.loai%></i>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <a class="btn" href="/des_detail/<%= view._id%>">Xem thêm</a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary" href="/suablog/<%= view._id%>">Sửa</a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a class="btn btn-danger" href="/xoablog/<%= view._id%>">Xóa</a>
+                        </div>
+
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+    <% include footer %>

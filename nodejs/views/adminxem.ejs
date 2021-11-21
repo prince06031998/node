@@ -1,0 +1,45 @@
+<% include header1 %>
+
+  <div class="  font-weight-bold text-center  font mt-3 card-header justify-content-center d-flex">
+    <h1 style="color: blue !important">DANH SÁCH BÀI POST<h1>
+  </div>
+  <table class="table table-bordered text-center">
+    <tr>
+      <th>ID</th>
+      <th>TÊN BÀI VIẾT</th>
+      <th>THỂ LOẠI</th>
+      <th>NGÀY ĐĂNG</th>
+      <th>TÁC GỈA</th>
+      <th colspan="2">Thao tac</th>
+
+    </tr>
+    <% myblog.forEach(dla=> {%>
+      <tr>
+        <td>
+            <%= dla._id %>
+          </td>
+        <td>
+          <%= dla.name %>
+        </td>
+        <td>
+            <%= dla.loai %>
+        </td>
+        <td>
+          <%= dla.date %>
+        </td>
+        <td>
+            <%= dla.author %>
+          </td>
+        
+          <td>
+            <a href="/suablog/<%= dla._id%>" class="btn btn-danger">Sua</a>
+            <a href="/delp/<%= dla._id %>" class="btn btn-danger">Xoa</a>
+          </td>
+
+   
+      </tr>
+      <% }) %>
+  </table>
+
+
+  <% include footer1 %>

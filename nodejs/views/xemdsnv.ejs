@@ -1,0 +1,42 @@
+<% include header1 %>
+
+  <div class="  font-weight-bold text-center  font mt-3 card-header justify-content-center d-flex">
+    <h1 style="color: blue !important">DANH SÁCH TÁC GIẢ<h1>
+  </div>
+  <table class="table table-bordered text-center">
+    <tr>
+      <th>ID</th>
+      <th>Avatar</th>
+      <th>Tên tác giả</th>
+      <th colspan="2">Thao tac</th>
+
+    </tr>
+    <% data.forEach(dla=> {%>
+      <tr>
+        <td>
+          <%= dla._id %>
+        </td>
+        <td>
+          <% if(dla.avatar!=null){ %>
+            <img src="/images/<%= dla.avatar %> " height="100px">
+            <% } else { %>
+              <img src="/images/no-image-icon-23505.png" height="100px">
+              <% } %>
+        </td>
+        <td>
+          <%= dla.name %>
+        </td>
+        
+        
+          <td>
+            <a href="/sua/<%= dla._id %>" class="btn btn-danger">Sua</a>
+            <a href="/dela/<%= dla._id %>" class="btn btn-danger">Xoa</a>
+          </td>
+
+   
+      </tr>
+      <% }) %>
+  </table>
+
+
+  <% include footer1 %>

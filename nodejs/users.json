@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "619603093a8eea3a42af3eb5"
+  },
+  "name": "Hưng",
+  "avatar": "c420f9bec9be8fa4a4e453dae12976e0.jpg",
+  "username": "hung",
+  "password": "$2b$10$z7PtCEv.QiJvE8278CPnxe4tErSqnhw84j1Ly90JJR6f.CMavOEVq"
+},{
+  "_id": {
+    "$oid": "61977747e805b6e0e62c8c93"
+  },
+  "name": "Lê",
+  "avatar": "2f86b48ee88121cef71fc2ac5c679a35.jpg",
+  "username": "alo",
+  "password": "$2b$10$gr2y0e4riNS.ZBiC4ZsWKOc75qX8rkDS0cM9e8NCz8eu4wO/Jlqom"
+}]

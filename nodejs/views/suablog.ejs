@@ -1,0 +1,64 @@
+<% include header.ejs %>
+
+    <header class="masthead" style="background-image: url('/assets/img/about-bg.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>EDIT POST</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form action="/suablog" method="post" enctype="multipart/form-data">
+        <h1 class="text-center">Đăng bài viết</h1>
+        <div class="row">
+            <div>
+                <input type="hidden" name="_id">
+            </div>
+            <div class="col-12">
+                <b>Thể loại</b> :
+                <select name="loai">
+                    <option value="food">Foody</option>
+                    <option value="travel">Travel</option>
+                    <option value="sport">Sport</option>
+                    <option value="tech">Technology</option>
+                </select>
+            </div>
+        </div>
+        <input type="hidden" name="_id" value="<%= bl._id %>">
+        <div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <b>Tiêu đề bài viết</b>
+                <input type="text" class="form-control" placeholder="Nhập tiêu đề bài viết" name="namebl" value="<%= bl.name %>">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <b>Nội dung bài viết</b><br>
+                <input type="text" name="des" class="form-control" placeholder="Nhập mô tả bài viết" value="<%= bl.des %>">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-12">
+                <b>Nội dung bài viết</b><br>
+                <textarea name="content" class="form-control" placeholder="Nhập nội dung bài viết" rows="15" value="<%- bl.content %>"></textarea>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-12">
+                <b>Image</b><br>
+                <input type="file" class="form-control" placeholder="img" name="img" required="required">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-12 text-right">
+                <button type="submit" class="btn btn-primary">SỬA</button>
+            </div>
+        </div>
+    </form>
+    <% include footer.ejs %>

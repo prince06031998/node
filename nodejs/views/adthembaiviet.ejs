@@ -1,0 +1,47 @@
+<% include header1.ejs %>
+
+    
+    <form action="/adpost" method="post" enctype="multipart/form-data">
+        <h1 class="text-center">Đăng bài viết</h1>
+        <div class="row">
+            <div class="col-12">
+                <b>Thể loại</b> :
+                <select name="loai">
+                    <option value="food">Foody</option>
+                    <option value="travel">Travel</option>
+                    <option value="sport">Sport</option>
+                    <option value="tech">Technology</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <b>Tiêu đề bài viết</b>
+                <input type="text" class="form-control" placeholder="Nhập tiêu đề bài viết" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <b>Mô tả ngắn</b><br>
+                <input type="text" name="des" class="form-control" placeholder="Nhập mô tả bài viết" >
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-12">
+                <b>Nội dung bài viết</b><br>
+                <textarea id="ckeditor" name="content" class="form-control" placeholder="Nhập nội dung bài viết"></textarea>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-12">
+                <b>Image</b><br>
+                <input type="file" class="form-control" placeholder="img" name="image" required="required">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-12 text-right">
+                <button type="submit" class="btn btn-primary">Đăng bài</button>
+            </div>
+        </div>
+    </form>
+    <% include footer1.ejs %>

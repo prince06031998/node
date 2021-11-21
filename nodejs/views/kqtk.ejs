@@ -1,0 +1,76 @@
+<% include header %>
+
+    <header class="masthead" style="background-image: url('/assets/img/home-bg.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>ALL POST</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="d-flex justify-content-center">
+        <div>
+            <div class="row">
+                <div class="col-12 text-right">
+                    <form action="/Xembv/1" method="get">
+                        <select name="loai" id="">
+                            <option value="all">Mặc định</option>
+                            <option value="food">Foody</option>
+                            <option value="travel">Travel</option>
+                            <option value="sport">Sport</option>
+                            <option value="tech">Technology</option>
+                        </select>
+                        <button type="submit">Chọn</button>
+                    </form>
+                </div>
+            </div>
+            <% data.forEach(view=> { %>
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <i>
+                                <h2 class="text-danger">
+                                    <%= view.name%>
+                                </h2>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5><i>Ngày Đăng :<%= view.date%></i></h5>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="test" style="text-overflow:ellipsis;">
+                                <h5><i>Mô tả ngắn :<%= view.des%></i></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5><i>Thể loại :<%= view.loai%></i></h5>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12 ">
+                            <h5><i>Tác giả :<%= view.author%></i></h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <a href="/des_detail/<%= view._id%>">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+    <% include footer %>

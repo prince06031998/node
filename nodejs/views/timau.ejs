@@ -1,0 +1,19 @@
+<% include header1 %> 
+
+<div class="container-fluid justify-content-center">           
+    <div class="  font-weight-bold text-center  font mt-3 card-header justify-content-center d-flex">
+        <h1 style="color: blue !important">TÌM KIẾM TÁC GIẢ<h1>
+    </div>
+    <form class="form" action="/timau" method="POST">
+        <div>
+            <label for="txtTennv">Tên tác giả ( ghi có dấu và không phân biệt Hoa Thường )</label>
+            <input type="text" name="txtTen" class="form-control" required="required">
+        </div>
+        
+        <div>
+            <button class="btn btn-danger" type="submit">Tim</button>
+        </div>
+    </form>
+</div>
+
+<% include footer1 %> 

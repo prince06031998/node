@@ -1,0 +1,91 @@
+[{
+  "_id": "E9aoKniYkvCQsHfSOpJYbrafh3MJW9Od",
+  "expires": {
+    "$date": "2021-11-26T10:05:38.091Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"name\":\"Hoàng Lê\",\"username\":\"user\",\"userId\":\"618e28c58d66d2518484ae63\"}"
+},{
+  "_id": "9szJbTziAwyPozKG2adsuZcx192x-cfp",
+  "expires": {
+    "$date": "2021-11-26T10:39:35.982Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"userId\":\"618e28c58d66d2518484ae63\",\"name\":\"Hoàng Lê\",\"username\":\"user\"}"
+},{
+  "_id": "zZSQBIiBIuv_4v7gpXbGp3BOhDKJHN_T",
+  "expires": {
+    "$date": "2021-12-01T10:12:03.750Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"name\":\"Hoàng Lê\",\"username\":\"user\",\"userId\":\"618e28c58d66d2518484ae63\"}"
+},{
+  "_id": "3Y1t7dc-xE5YHcJ3pdPoX-zntKyNWbra",
+  "expires": {
+    "$date": "2021-12-01T10:29:07.847Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"userId\":\"618e28c58d66d2518484ae63\",\"name\":\"Hoàng Lê\",\"username\":\"user\"}"
+},{
+  "_id": "RF6TDPMv5AYQ9fmKXMI94fyuEGO1lwip",
+  "expires": {
+    "$date": "2021-12-01T13:44:05.710Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"name\":\"hung\",\"username\":\"hung\",\"userId\":\"619504da9faeeb75d2429281\"}"
+},{
+  "_id": "fz2iebVX_Eruct1B94Qecjm3Mod3cTAY",
+  "expires": {
+    "$date": "2021-12-01T13:55:06.789Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"}}"
+},{
+  "_id": "1MLtzy9Ta1xL5Zn8RLRn7AgPQNcnmSlv",
+  "expires": {
+    "$date": "2021-12-02T05:22:50.986Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"name\":\"lan le\",\"username\":\"long\",\"userID\":\"6195b9faadb6fc94ace69632\"}"
+},{
+  "_id": "6T9Dn810Vv8Uw12NNBk8fxVQy4moMAsV",
+  "expires": {
+    "$date": "2021-12-02T07:41:09.661Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"name\":\"Hưng\",\"username\":\"hung\",\"user\":\"Hưng\"}"
+},{
+  "_id": "4iC12wSTIWBdK1lqMKhpPff6fP2rA_C3",
+  "expires": {
+    "$date": "2021-12-02T09:50:42.319Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"name\":\"Hoàng Lê\",\"username\":\"hoang\",\"user\":\"hoang\",\"userID\":\"6195e624ecfed90104aa381f\"}"
+},{
+  "_id": "feyzXpwlVr9UZMq9LcB63P7_h-INU2JT",
+  "expires": {
+    "$date": "2021-12-02T09:51:48.876Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"user\":\"hoang\",\"userID\":\"6195e624ecfed90104aa381f\",\"name\":\"Hoàng Lê\",\"username\":\"hoang\"}"
+},{
+  "_id": "aj_PCTar5oxLWoua3JVsWtfUQLx3WWmP",
+  "expires": {
+    "$date": "2021-12-03T12:42:01.391Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"user\":\"alo\",\"name\":\"Lê\",\"username\":\"alo\",\"adminname\":\"hoang\"}"
+},{
+  "_id": "V33MFu-Nm0s6EY1bsetgMEICK5Ws1Tjp",
+  "expires": {
+    "$date": "2021-12-03T14:03:48.810Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"user\":\"alo\",\"userID\":\"61977747e805b6e0e62c8c93\",\"name\":\"Lê\",\"username\":\"alo\"}"
+},{
+  "_id": "cRu9P7DUtoYIuXUq_2fLx_EHNRnAJBBr",
+  "expires": {
+    "$date": "2021-12-04T09:39:27.639Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"user\":\"alo\",\"userID\":\"61977747e805b6e0e62c8c93\",\"name\":\"Lê\",\"username\":\"alo\"}"
+},{
+  "_id": "6pamyf6NcQSRDaewEjc3T5_-_qcN8Nzp",
+  "expires": {
+    "$date": "2021-12-04T16:57:53.851Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"user\":\"hung\",\"name\":\"Hưng\",\"username\":\"hung\",\"avatar\":\"c420f9bec9be8fa4a4e453dae12976e0.jpg\",\"adminname\":\"hoang\",\"userID\":\"619603093a8eea3a42af3eb5\"}"
+},{
+  "_id": "fb5FGruaGuYW8cdoWFkhs1BQ4PC1uo2R",
+  "expires": {
+    "$date": "2021-12-05T14:00:34.740Z"
+  },
+  "session": "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"httpOnly\":true,\"path\":\"/\"},\"user\":\"alo\",\"name\":\"Lê\",\"username\":\"alo\",\"avatar\":\"2f86b48ee88121cef71fc2ac5c679a35.jpg\",\"adminname\":\"hoang\",\"userID\":\"61977747e805b6e0e62c8c93\"}"
+}]

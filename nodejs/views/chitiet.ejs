@@ -1,0 +1,81 @@
+<% include header.ejs %>
+
+    <header class="masthead" style="background-image: url('/images/<%= data['image'] %>')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>
+                            <%= data['name'] %>
+                        </h1>
+                        <p class="subheading"><i>
+                                <%= data['des'] %>
+                            </i></p>
+                        <span class="meta">
+                            Posted by
+                            <a href="#!">
+                                <%= data['author'] %>
+                            </a>
+                            on <%= data['date'] %>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <%- data['content'] %>
+                </div>
+            </div>
+        </div>
+    </article>
+    <hr style="width: 70%;border:solid;font-weight: bold;">
+
+
+    <div class="container">
+        <% if(locals.user) { %> 
+        <p class="float-left"><b>BÌnh luận></b></p>
+        <form action="/comment/<%= data['_id'] %>" method="post">
+            <img src="/images/22-223863_no-avatar-png-circle-transparent-png.png" width="50px" height="50px" ; />
+            <input type="text" name="comment" placeholder="Binh luan">
+            <button class="btn-primary" type="submit">Binh luan</button>
+        </form>
+        <% } %> 
+        <div class="row justify-content-center mt-5 ml-5">
+
+            <p class=""><b>Các bình luận</b></p>
+            <hr>
+        </div>
+        <div class="row">
+
+            <div class="col-2">
+
+            </div>
+            <div class="col-10">
+               
+                <% blog.forEach(b=>{ %>
+                    <div class="row">
+                        <div class="col-5">
+                           
+                            <img src="/images/imagesaa.jfif" width="50px" height="50px" />
+                            <i><u>
+                                    <%= b['person']%> ( <%= b['date']%> ) 
+                                </u></i><p><%= b['content']%></p>
+                                <H2></H2>
+                        </div>
+                    </div>
+                    <% }) %>
+
+
+            </div>
+
+            <br />
+        </div>
+    </div>
+
+
+    <% include footer.ejs %>

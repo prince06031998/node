@@ -1,0 +1,41 @@
+<% include header.ejs %>
+
+
+    <header class="masthead" style="background-image: url('/assets/img/post-bg.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>DANG KY</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid justify-content-center"></div>
+    <form class="form" action="/dangky" method="POST" enctype="multipart/form-data">
+        <div>
+            <label>Ho va ten</label>
+            <input type="text" name="name" placeholder="Nhập tên" class="form-control" required="required">
+        </div>
+        <div>
+            <label>Hinh</label>
+            <input type="file" name="hinh" required="required">
+        </div>
+        <div>
+            <label for="tennv">Ten dang nhap</label>
+            <input type="text" name="username" class="form-control" required="required">
+        </div>
+        <div>
+            <label for="tuoi">Password</label>
+            <input type="password" name="password" class="form-control" required="required">
+        </div>
+
+        <div>
+            <button class="btn btn-danger" type="submit">Them</button>
+        </div>
+    </form>
+    </div>
+
+    <% include footer.ejs %>
